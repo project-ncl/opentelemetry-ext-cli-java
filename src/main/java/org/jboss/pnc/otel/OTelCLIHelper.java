@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.redhat.resilience.otel;
+package org.jboss.pnc.otel;
 
-import com.redhat.resilience.otel.internal.EnvarExtractingPropagator;
+import org.jboss.pnc.otel.internal.EnvarExtractingPropagator;
 
 import io.opentelemetry.api.GlobalOpenTelemetry;
 import io.opentelemetry.api.common.Attributes;

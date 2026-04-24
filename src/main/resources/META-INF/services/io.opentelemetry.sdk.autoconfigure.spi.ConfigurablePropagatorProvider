@@ -1,1 +1,1 @@
-com.redhat.resilience.otel.internal.EnvarExtractingConfigurablePropagator
+org.jboss.pnc.otel.internal.EnvarExtractingConfigurablePropagator

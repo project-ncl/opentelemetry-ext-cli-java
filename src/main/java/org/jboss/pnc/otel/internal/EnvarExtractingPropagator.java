@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.redhat.resilience.otel.internal;
+package org.jboss.pnc.otel.internal;
 
-import static com.redhat.resilience.otel.internal.OTelContextUtil.extractContextFromTraceParent;
-import static com.redhat.resilience.otel.internal.OTelContextUtil.extractTraceState;
+import static org.jboss.pnc.otel.internal.OTelContextUtil.extractContextFromTraceParent;
+import static org.jboss.pnc.otel.internal.OTelContextUtil.extractTraceState;
 
 import java.io.BufferedReader;
 import java.io.IOException;
