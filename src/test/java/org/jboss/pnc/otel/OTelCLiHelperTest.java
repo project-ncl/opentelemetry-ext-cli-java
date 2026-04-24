@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.redhat.resilience.otel;
+package org.jboss.pnc.otel;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -25,12 +25,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collections;
 
+import org.jboss.pnc.otel.fixture.TestSpanExporter;
+import org.jboss.pnc.otel.internal.EnvarExtractingPropagator;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
-
-import com.redhat.resilience.otel.fixture.TestSpanExporter;
-import com.redhat.resilience.otel.internal.EnvarExtractingPropagator;
 
 import io.opentelemetry.api.GlobalOpenTelemetry;
 import io.opentelemetry.sdk.trace.export.SimpleSpanProcessor;
