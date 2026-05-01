@@ -27,7 +27,7 @@
 
   <groupId>org.jboss.pnc.otel</groupId>
   <artifactId>opentelemetry-ext-cli-java</artifactId>
-  <version>2.0.0</version>
+  <version>2.0.1-SNAPSHOT</version>
 
   <name>opentelemetry-ext-cli-java</name>
 
@@ -54,7 +54,7 @@
   <scm>
     <connection>scm:git:https://github.com/project-ncl/opentelemetry-ext-cli-java.git</connection>
     <developerConnection>scm:git:git@github.com:project-ncl/opentelemetry-ext-cli-java.git</developerConnection>
-    <tag>v2.0.0</tag>
+    <tag>HEAD</tag>
     <url>https://github.com/project-ncl/opentelemetry-ext-cli-java</url>
   </scm>
 
@@ -255,7 +255,7 @@
             </sortPom>
           </pom>
           <java>
-            <removeUnusedImports/>
+            <removeUnusedImports />
             <importOrder>
               <file>java-import-order.txt</file>
             </importOrder>
