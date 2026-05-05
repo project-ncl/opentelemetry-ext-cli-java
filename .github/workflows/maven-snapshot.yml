@@ -8,7 +8,7 @@ on:
 
 jobs:
     call-snapshot-job:
-      uses: project-ncl/shared-github-actions/.github/workflows/maven-snapshot.yml@8678ff95dd29d5837c3203a061549e39449aba25 # main
+      uses: project-ncl/shared-github-actions/.github/workflows/maven-snapshot.yml@429a1085131890ddf95456ac2a7a8b0866dd78ad # main
       with:
         project_name: 'project-ncl/opentelemetry-ext-cli-java'
         java_version: 17
