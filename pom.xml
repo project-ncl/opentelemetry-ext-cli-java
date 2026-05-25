@@ -71,7 +71,7 @@
     <!-- Override enforcer requirements -->
     <jdk.min.version>11</jdk.min.version>
 
-    <slf4j.version>2.0.17</slf4j.version>
+    <slf4j.version>2.0.18</slf4j.version>
     <!--
     The Quarkus BOM brings in its own versions of okhttp3 (3.14.9) and okio (1.17.2) and kotlin (1.7.22).
     This conflicts with the OpenTelemetry versions. We can't update to 1.52/1.53 as it causes major conflicts
