@@ -77,17 +77,7 @@
     <jdk.min.version>11</jdk.min.version>
 
     <slf4j.version>2.0.18</slf4j.version>
-    <!--
-    The Quarkus BOM brings in its own versions of okhttp3 (3.14.9) and okio (1.17.2) and kotlin (1.7.22).
-    This conflicts with the OpenTelemetry versions. We can't update to 1.52/1.53 as it causes major conflicts
-    in Kotlin when building with Gradle (Protocol message contained an invalid tag (zero))
-    1.53 : okhttp 5.1.0 ( okio 3.15.0, kotlin-stdlib 2.2.0)
-    1.52 : okhttp 5.1.0 ( okio 3.15.0, kotlin-stdlib 2.2.0)
-    1.51 : okhttp 4.12.0 ( okio 3.6.0, kotlin-stdlib 1.8.21)
-    1.40 : okhttp 4.12.0 ( okio 3.6.0, kotlin-stdlib 1.8.21)
-    1.29 : okhttp 4.11.0 ( okio 3.2.0, kotlin-stdlib 1.6.20)
-    -->
-    <otel.version>1.51.0</otel.version>
+    <otel.version>1.62.0</otel.version>
     <quarkus.version>2.16.12.Final</quarkus.version>
 
     <tagNameFormat>v@{project.version}</tagNameFormat>
@@ -188,4 +178,3 @@
     </plugins>
   </build>
 </project>
-<!-- Made with Bob -->
