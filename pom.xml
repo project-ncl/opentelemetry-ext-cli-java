@@ -119,18 +119,6 @@
         <version>1.18.46</version>
         <scope>provided</scope>
       </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-simple</artifactId>
-        <version>${slf4j.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>uk.org.webcompere</groupId>
-        <artifactId>system-stubs-core</artifactId>
-        <version>2.1.8</version>
-        <scope>test</scope>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
