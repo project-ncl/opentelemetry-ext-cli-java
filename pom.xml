@@ -77,7 +77,7 @@
     <jdk.min.version>11</jdk.min.version>
 
     <slf4j.version>2.0.18</slf4j.version>
-    <otel.version>1.62.0</otel.version>
+    <otel.version>1.63.0-alpha</otel.version>
 
     <tagNameFormat>v@{project.version}</tagNameFormat>
   </properties>
@@ -88,7 +88,7 @@
       <dependency>
         <groupId>io.opentelemetry</groupId>
         <artifactId>opentelemetry-bom-alpha</artifactId>
-        <version>${otel.version}-alpha</version>
+        <version>${otel.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
