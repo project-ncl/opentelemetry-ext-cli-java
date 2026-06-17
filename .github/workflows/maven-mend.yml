@@ -27,6 +27,8 @@ jobs:
     with:
       SCA: true
       SAST: true
+      SCA_EXCLUDES: "tests/**"
+      SAST_EXCLUDES: "tests/"
     secrets:
       MEND_URL: ${{ secrets.MEND_URL }}
       MEND_USER_KEY: ${{ secrets.MEND_USER_KEY }}
