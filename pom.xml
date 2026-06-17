@@ -78,7 +78,6 @@
 
     <slf4j.version>2.0.18</slf4j.version>
     <otel.version>1.62.0</otel.version>
-    <quarkus.version>2.16.12.Final</quarkus.version>
 
     <tagNameFormat>v@{project.version}</tagNameFormat>
   </properties>
