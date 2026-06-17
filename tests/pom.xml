@@ -69,6 +69,7 @@
       <groupId>org.jboss.pnc.otel</groupId>
       <artifactId>opentelemetry-ext-cli-java</artifactId>
       <version>${project.version}</version>
+      <scope>test</scope>
     </dependency>
 
     <!-- Test dependencies -->
