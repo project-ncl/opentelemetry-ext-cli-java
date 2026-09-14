@@ -76,7 +76,7 @@
     <!-- Override enforcer requirements -->
     <jdk.min.version>11</jdk.min.version>
 
-    <slf4j.version>2.0.18</slf4j.version>
+    <slf4j.version>2.0.19</slf4j.version>
     <otel.version>1.62.0</otel.version>
 
     <tagNameFormat>v@{project.version}</tagNameFormat>
