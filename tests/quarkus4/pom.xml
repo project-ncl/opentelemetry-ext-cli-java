@@ -34,8 +34,6 @@
     <javaVersion>21</javaVersion>
     <maven.compiler.release>21</maven.compiler.release>
     <maven.compiler.testRelease>21</maven.compiler.testRelease>
-
-    <quarkus.version>3.40.1.2</quarkus.version>
   </properties>
 
   <dependencyManagement>
@@ -51,7 +49,7 @@
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-bom</artifactId>
-        <version>${quarkus.version}</version>
+        <version>4.0.0.CR1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
