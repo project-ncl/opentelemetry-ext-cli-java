@@ -35,7 +35,7 @@
     <maven.compiler.release>11</maven.compiler.release>
     <maven.compiler.testRelease>11</maven.compiler.testRelease>
 
-    <quarkus.version>3.40.1.1</quarkus.version>
+    <quarkus.version>3.40.1.2</quarkus.version>
   </properties>
 
   <dependencyManagement>
