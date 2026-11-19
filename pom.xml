@@ -93,11 +93,6 @@
         <scope>import</scope>
       </dependency>
       <dependency>
-        <groupId>io.opentelemetry</groupId>
-        <artifactId>opentelemetry-semconv</artifactId>
-        <version>1.29.0-alpha</version>
-      </dependency>
-      <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>${slf4j.version}</version>
