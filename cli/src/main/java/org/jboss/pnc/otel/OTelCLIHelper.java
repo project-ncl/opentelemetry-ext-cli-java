@@ -18,6 +18,7 @@ package org.jboss.pnc.otel;
 import org.jboss.pnc.otel.internal.EnvarExtractingPropagator;
 
 import io.opentelemetry.api.GlobalOpenTelemetry;
+import io.opentelemetry.api.common.AttributeKey;
 import io.opentelemetry.api.common.Attributes;
 import io.opentelemetry.api.trace.Span;
 import io.opentelemetry.context.Context;
@@ -29,7 +30,6 @@ import io.opentelemetry.sdk.trace.SdkTracerProvider;
 import io.opentelemetry.sdk.trace.SpanProcessor;
 import io.opentelemetry.sdk.trace.export.BatchSpanProcessor;
 import io.opentelemetry.sdk.trace.export.SpanExporter;
-import io.opentelemetry.semconv.resource.attributes.ResourceAttributes;
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 
@@ -39,6 +39,19 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @UtilityClass
 public class OTelCLIHelper {
+    /**
+     * The 'service.name' resource attribute key. Defined locally rather than via the
+     * {@code io.opentelemetry.semconv:opentelemetry-semconv} artifact; the canonical definition is
+     * {@code ServiceAttributes.SERVICE_NAME} in
+     * <a href=
+     * "https://github.com/open-telemetry/semantic-conventions-java/blob/main/semconv/src/main/java/io/opentelemetry/semconv/ServiceAttributes.java">
+     * semantic-conventions-java</a>. This avoids importing an entire library for a single
+     * definition.
+     * <p>
+     * ({@link UtilityClass} makes this field static.)
+     */
+    private final AttributeKey<String> SERVICE_NAME = AttributeKey.stringKey("service.name");
+
     private SpanProcessor spanProcessor;
 
     private Span root = null;
@@ -106,7 +119,7 @@ public class OTelCLIHelper {
         spanProcessor = processor;
 
         Resource resource = Resource.getDefault()
-                .merge(Resource.create(Attributes.of(ResourceAttributes.SERVICE_NAME, serviceName)));
+                .merge(Resource.create(Attributes.of(SERVICE_NAME, serviceName)));
 
         SdkTracerProvider sdkTracerProvider = SdkTracerProvider.builder()
                 .addSpanProcessor(processor)
